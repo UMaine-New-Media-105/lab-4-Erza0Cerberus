@@ -1,0 +1,46 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  
+  myEllipse(100,100,100,100,2,255,0,170)
+  myTriangle(0, 0, 200, 200, 0, 200, 1, 255, 30, 170)
+  myCircle(200,200,35,1,255,30,170)
+}  
+ function myEllipse(x, y, w, h, ellipseSize, r, g, b)
+{
+  push()
+  
+scale(ellipseSize);
+fill (color(r, g, b))
+ellipse(x, y, w, h)
+  
+  pop()
+}
+
+  
+ function myTriangle(x, y, w, h, t, l, triangleSize, r, g, b)
+{
+  
+  push()
+  
+scale(triangleSize);
+fill (color(r, g, b))
+triangle(x, y, w, h, t, l)
+  
+  pop()
+}
+
+function myCircle(x, y, w, circleSize, r, g, b)
+{
+  
+  push()
+  
+scale(circleSize);
+fill (color(r, g, b))
+circle(x, y, w)
+  
+  pop()
+}
